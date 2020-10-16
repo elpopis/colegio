@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/captura.css">
+    <title>Alta alumno</title>
+</head>
+<body>
+    <h1>Alta alumno</h1>
+    <form action="p_alta_alumno.php" method="POST"  enctype="multipart/form-data">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" placeholder="Introduce el nombre"><br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" placeholder="Apellido"><br>
+    <label for="dni">DNI</label>
+    <input type="number" name="dni" placeholder="DNI"><br>
+
+    <div id="Selector">
+        <input type="file" name="foto" id="foto" class="SubirFoto" accept="image/*" capture="camera" />
+        <label for="foto"><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Envía una foto...</span></label>
+    </div>
+
+    <input type="submit" value="Enviar"> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta alumno</title>
+</head>
+<body>
+<h1>Alta alumno</h1>
+  <form action="p_alta_alumno.php" method="POST"  enctype="multipart/form-data">
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" placeholder="Introduce el nombre"><br>
+  <label for="apellido">Apellido</label>
+  <input type="text" name="apellido" placeholder="Apellido"><br>
+  <label for="dni">DNI</label>
+  <input type="number" name="dni" placeholder="DNI"><br>
+  <label for="foto">Foto</label>
+  <input type="file" name="foto"><br>
+  <input type="submit" value="Enviar"> 
+</form>
+</body>
+</html>
